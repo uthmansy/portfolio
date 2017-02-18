@@ -1,0 +1,101 @@
+.main-navigation, .nav-toggle {
+	position: fixed;
+}
+
+.main-navigation {
+	background: $black;
+	z-index: 99;
+	right: auto;
+	left: 100%;
+	top: 0;
+	bottom: 0;
+	list-style: none;
+	width: 100%;
+	padding-left: 0;
+	padding-top: 6em;
+	margin: 0;
+	max-width: 400px;
+	
+	&-open {
+		animation-name: slide-menu-in;
+		animation-duration: .3s;
+		box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+		right: 0;
+		left: auto;
+	}
+	
+	li {
+		a {
+			display: block;
+			color: $white;
+			text-transform: uppercase;
+			font-family: $font_heading;
+			letter-spacing: 3px;
+			font-size: .8em;
+			padding: 1em 4em;
+			&:hover {
+				background: darken($color_main, 15%);
+			}
+		}
+	}
+}
+
+.nav-toggler {
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	svg {
+		width: 70px;
+		height: 70px;
+	}
+}
+
+.nav-overlay {
+	background: $black;
+	opacity: .6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 98;
+	display: none;
+	
+	&-open {
+		display: block;
+	}
+}
+
+.nav {
+	&-toggler {
+		font-size: .6rem;
+		padding: 2em;
+		cursor: pointer;
+		transform: scale(.7);
+		@media screen and ( min-width: 768px ) {
+			font-size: 1rem;
+			transform: scale(1);
+		}
+		&-bar {
+			fill: none;
+			stroke: $white;
+			stroke-width: 3;
+			stroke-linecap: round;
+			transition: transform .3s ease-out;
+			-moz-transform-origin: 0 0;
+			transform-box: fill-box;
+			transform-origin: top left;
+		}
+		
+		&.open &-second {
+			stroke-width: 0;
+		}
+	}
+}
+
+
+@keyframes slide-menu-in {
+	0% { right: -410px;  }
+	100% { right: 0px; }
+}

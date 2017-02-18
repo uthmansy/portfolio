@@ -1,0 +1,14 @@
+.footer {
+	&-copy {
+		margin-bottom: 0;
+		span {
+			font-size: 3em;
+			margin-right: .5em;
+			vertical-align: middle;
+		}
+	}
+}
+
+.site-footer {
+	padding: 2em;
+}

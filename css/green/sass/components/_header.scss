@@ -1,0 +1,68 @@
+.site-header {
+	background: linear-gradient(rgba(77, 148, 189, 0.5), rgba(77, 148, 189, 0.5)), url("../../assets/images/backgrounds/header-bg.jpg");
+	background-size: cover;
+	color: $white;
+	position: relative;
+	font-size: .9rem;
+	@media screen and ( min-width: 768px ) {
+		font-size: 1rem;
+	}
+}
+
+.callout {
+	color: $white;
+	text-transform: uppercase;
+	&-table {
+		display: table;
+		height: 100vh;
+		min-height: 600px;
+	}
+	
+	&-table-cell {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	span {
+		margin-bottom: .4em;
+		font-size: 5em;
+		display: inline-block;
+	}
+	
+	h1 {
+		color: inherit;
+		margin-bottom: .7em;
+		letter-spacing: 5px;
+	}
+	
+	p {
+		max-width: 500px;
+		margin: auto;
+		font-size: .8em;
+		letter-spacing: 2px;
+		margin-bottom: 2em;
+	}
+}
+
+.scroll-down {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 35px;
+	height: 50px;
+	border: 2px solid $white;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, .7);
+	cursor: pointer;
+	
+	&-wheel {
+		display: block;
+		width: 0;
+		border-left: 4px solid $color_main;
+		margin: auto;
+		height: 10px;
+		margin-top: 10px;
+		animation: mouse-wheel .5s linear infinite;
+	}
+}

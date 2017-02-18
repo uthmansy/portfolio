@@ -1,0 +1,52 @@
+
+//variables
+@import "variables/colors";
+@import "variables/fonts";
+
+
+//custom layout
+@import "layout";
+
+//Bootstrap overides
+@import "bootstrap/alerts";
+@import "bootstrap/input";
+@import "bootstrap/badges";
+@import "bootstrap/buttons";
+@import "bootstrap/dropdowns";
+@import "bootstrap/labels";
+@import "bootstrap/list-groups";
+@import "bootstrap/panels";
+@import "bootstrap/progress-bars";
+@import "bootstrap/tabs";
+@import "bootstrap/thumbnails";
+@import "bootstrap/wells";
+@import "bootstrap/jumbotron";
+@import "bootstrap/tables";
+@import "bootstrap/modal";
+
+//defauls of the site
+@import "defaults/elements";
+@import "defaults/typography";
+@import "defaults/classes";
+
+
+//custom components
+@import "components/cards";
+@import "components/sections";
+@import "components/featured-slider";
+@import "components/comments";
+@import "components/author-details";
+@import "components/experience-popovers";
+@import "components/header";
+@import "components/footer";
+@import "components/header-text";
+@import "components/menu";
+@import "components/social-icons";
+@import "components/lightbox";
+@import "components/social-bar";
+@import "components/service";
+@import "components/testimonial";
+@import "components/back-to-top";
+
+//animations
+@import "animations";

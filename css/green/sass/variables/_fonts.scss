@@ -1,0 +1,25 @@
+@font-face {
+	font-family: mst;
+	src: url('../../assets/fonts/montserrat/montserrat-regular.ttf');
+}
+
+@font-face {
+	font-family: mst;
+	font-weight: bold;
+	src: url('../../assets/fonts/montserrat/montserrat-bold.ttf');
+}
+
+@font-face {
+	font-family: os;
+	src: url('../../assets/fonts/open-sans/opensans-regular.ttf');
+}
+
+@font-face {
+	font-family: os;
+	font-weight: bold;
+	src: url('../../assets/fonts/open-sans/opensans-bold.ttf');
+}
+
+$font_main: os;
+$font_heading: mst;
+$font_menu: mst;

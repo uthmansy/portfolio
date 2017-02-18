@@ -1,0 +1,29 @@
+body {
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+input[type="text"], input[type="email"], textarea {
+	border: 1px solid $black;
+	padding: .5em 1em;
+	font-style: italic;
+	font-size: .8em;
+	width: 100%;
+	display: block;
+	
+	&:focus, &:active, &:hover {
+		outline: none;
+	}
+}
+
+textarea {
+	height: 400px;
+}
+
+sup, sub {
+	font-size: .7rem;
+	vertical-align: middle;
+}

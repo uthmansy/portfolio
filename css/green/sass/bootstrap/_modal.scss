@@ -1,0 +1,12 @@
+.modal {
+	&-content {
+		border-radius: 0;
+		padding: 3em;
+	}
+	
+	&-title {
+		text-transform: uppercase;
+		letter-spacing: 1xp;
+		color: inherit;
+	}
+}
